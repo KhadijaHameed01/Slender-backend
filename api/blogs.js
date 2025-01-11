@@ -14,7 +14,7 @@ app.use(cors({
   ]
 }));
 
-// Your API routes here...
+
 app.get('/api/blogs', (req, res) => {
   const filePath = join(process.cwd(), 'api', 'blogData.json');
   readFile(filePath, 'utf8', (err, data) => {
