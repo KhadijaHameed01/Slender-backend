@@ -13,7 +13,7 @@ const app = express();
 const PORT = 5000;
 
 // Middleware
-app.use(cors());
+app.use(cors({ origin: 'https://slender-khadija.netlify.app/' }));
 
 // Route to serve blogs from blogData.json
 app.get('/blogs', (req, res) => {
