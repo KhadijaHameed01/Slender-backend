@@ -7,10 +7,7 @@ import path from 'path';
 
 // Get the __dirname equivalent in ES modules
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);  // Correct this line
-
-// Now you can use __dirname like in CommonJS
-console.log(__dirname);
+const __dirname = path.dirname(__filename); 
 
 const app = express();
 const PORT = 5000;
@@ -37,5 +34,5 @@ app.get('/', (req, res) => {
 
 // Starting server
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on https://slender-backend.vercel.app/${PORT}`);
 });
